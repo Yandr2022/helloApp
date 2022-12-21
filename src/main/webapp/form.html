@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User form</title>
+</head>
+<body>
+<form action="welcome" method="POST">
+    <label for="un">Name:</label><br>
+    <input type="text" name="username" id="un" required/><br><br>
+    <label for="age">Age:</label><br>
+    <input type="number" step="1" min="1" max="100" name="userage" id="age" required/><br><br>
+    <label for="gend">Gender:</label><br>
+    <input id ="gend" type="radio" name="gender" value="female" checked />Female
+    <input type="radio" name="gender" value="male" />Male<br><br>
+    <label for="country">Country:</label><br>
+    <select name="country" id = "country">
+    <option>Canada</option>
+    <option>Spain</option>
+    <option>France</option>
+    <option>Germany</option>
+    <option>Belarus</option>
+    <option>Russia</option>
+</select><br><br>
+    <label for="cb">Courses:</label><br>
+    <input id = "cb" type="checkbox" name="courses" value="JavaSE" checked />Java SE
+    <input type="checkbox" name="courses" value="JavaFX" checked />Java FX
+    <input type="checkbox" name="courses" value="JavaEE" checked />Java EE
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
